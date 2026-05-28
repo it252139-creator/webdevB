@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォームの基本</title>
+</head>
+
+<body>
+    <form action="/my-handling-form-page" method="post">
+        <!---action属性:送り先-->
+        <!---method属性:送り方(get/post)/get:パラメーターで送る。post:-->
+        <!--基本は、form要素の中に入っていないとデータとして送ることはできない-->
+        <div>
+            <!--p要素は、ブロックレベル要素なので、縦に並ぶ-->
+            <!--ラベルを付ける。labelのforとinoutのidで紐づける-->
+            <!--labelは、input要素なので、横に並ぶ-->
+            <label for="name">Name:</label>
+            <!--input要素はデーターフィールドで、type属性でデータの種類を分別する。-->
+            <!--text,number,dete,email,telなどなど-->
+            <!--id、htmlのルール:同一html内は一つしかない(ユニーク)-->
+            <!--nemeは、PHPとか受け取る側がデータを判定する属性、複数可-->
+            <!--inputは、inline要素なので、横に並ぶ-->
+            <input type="text" id="name" name="user_name" />
+        </div>
+        <div>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" />
+        </div>
+        <div>
+            <label for="msg">Message:</label>
+            <!--textareaは,改行のある段落を入力するためのテキストエリアです。-->
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
+        <input type="submit" value="送信">
+        <button type="submit">送信</button>
+        <!--type-->
+        <input type="image" src="画像パス" alt="送信ボタン" />
+    </form>
+    <button>今日の昼食</button>
+</body>
+
+</html>
