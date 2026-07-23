@@ -22,6 +22,33 @@ body {
     line-height: 1.6;
 }
 
+.comments {
+    margin-bottom: 16px;
+}
+
+.comment-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.comments-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+    margin-bottom: 12px;
+}
+
+.comments-header h2 {
+    margin-bottom: 0;
+}
+
+#comments-toggle {
+    margin: 0;
+}
+
 .site-header {
     background: rgba(255, 253, 246, 0.96);
     backdrop-filter: blur(10px);
